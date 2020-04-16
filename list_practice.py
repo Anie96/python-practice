@@ -56,4 +56,69 @@ print(last_value)
 # print(value_before_start)
 
 #get item with a slice
-marxes = 
+marxes = ['Groucho', 'Chico', 'Harpo']
+first_slice = marxes[0:2]
+print(first_slice)
+
+#you can stop with values other than one
+step_slice = marxes[::2]
+print(step_slice)
+
+#slice with negative stop
+negative_step_clice = marxes[::-2]
+print(negative_step_clice)
+
+#to reverse a list without mutating
+list_reverse_slice = marxes[::-1]
+print(list_reverse_slice)
+
+#to reverse a list while by changing original list
+#it changes the list but doesn't return its value
+# marxes.reverse()
+# print(marxes)
+
+#slice with invalid index will return index or snap to nearest value
+invalid_index_slice = marxes[4:]
+print(invalid_index_slice)
+another_invalid_slice = marxes[-6:]
+print(another_invalid_slice)
+
+#add item to end of list with append
+
+marxes.append('Another One')
+print(marxes)
+
+#add item by offset with insert
+marxes.insert(0, 'At Beginning')
+print(marxes)
+
+#insert at end
+marxes.insert(6, 'At End')
+print(marxes)
+
+#duplicate all items with *
+
+duplicate_marxes = marxes * 2
+print(duplicate_marxes)
+
+#merge list into another
+#using extend()
+new_list = ["I Am", "Another List"]
+marxes.extend(new_list)
+print(marxes)
+
+#using +
+
+another_new_list = ["Another List", "Again"]
+marxes += another_new_list
+print(marxes)
+
+
+#Updating a List
+#by offset
+marxes[2] = "Changed Item"
+print(marxes)
+
+#with slice
+marxes[4:6] = [1, 2]
+print(marxes)
