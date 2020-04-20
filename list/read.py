@@ -43,3 +43,38 @@ invalid_index_slice = marxes[4:]
 print(invalid_index_slice)
 another_invalid_slice = marxes[-6:]
 print(another_invalid_slice)
+
+
+#get items index by value with index method
+
+groucho_index = marxes.index('Groucho')
+
+print(groucho_index)
+
+#value not exist 
+# index = marxes.index('Available')
+# print(index)
+#returns Value Error: Value not in list
+
+#check if value exist in list 
+is_groucho_present = 'Groucho' in marxes
+print(is_groucho_present)
+is_av_present = 'Available' in marxes
+print(is_av_present)
+
+
+#count occurence of value with count method
+
+print(marxes.count('Harpo'))
+print(marxes.count('Bob'))
+
+
+#convert list to string with join()
+
+print(' '.join(marxes))
+
+
+#get length with len()
+print(len(marxes))
+
+

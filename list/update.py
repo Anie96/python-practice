@@ -40,3 +40,7 @@ print(marxes)
 #with slice
 marxes[4:6] = [1, 2]
 print(marxes)
+
+
+marxes[4:6] = 'water'
+print(marxes)
