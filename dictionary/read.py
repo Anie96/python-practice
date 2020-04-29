@@ -40,3 +40,9 @@ print(type(all_items))
 
 length = len(non_empty_dict)
 print(length)
+
+
+#check presense in in
+print("one" in non_empty_dict)
+
+print("three" in non_empty_dict)
